@@ -44,6 +44,8 @@ public class Droid {
                     break;
                 case 3:
                     System.out.println("Performing task: Water the Plants");
+                    String Plants = " 20 mins";
+                    System.out.println("Time taken to water the Plants is" +" "+ Plants);
                     M.decreaseBattery();
                     break;
                 case 4:
@@ -65,15 +67,19 @@ public class Droid {
         sc.close();
     }
 
-    public void sendEmail() {
+    public void sendEmail() 
+    {
         // Email sending logic
         System.out.println("Performing task: Write a Mail and send it");
     }
 
-    public void decreaseBattery() {
-        if (battery >= 4) {
+    public void decreaseBattery() 
+    {
+        if (battery >= 4) 
+        {
             battery -= 4;
-        } else {
+        } else 
+        {
             battery = 0;
         }
     }
