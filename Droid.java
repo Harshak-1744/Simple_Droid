@@ -116,7 +116,10 @@ public class Droid
                     System.out.println("Invalid task number");
                     break;
             }
-
+            if (M.battery < 20) 
+            {
+                System.out.println("Warning: Battery level is low!");
+            }
             System.out.println("Battery percentage: " + M.battery + "%");
 
             System.out.println("Do you want to perform another task? (yes/no):");
