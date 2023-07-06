@@ -7,3 +7,5 @@
 * Stock updates
 * Water Plants
 * Task Manager 
+
+Ongoing Project
