@@ -3,4 +3,7 @@
 ## Bot Used for simple Tasks
 
 ### Tasks
-* Display 
+* Mail
+* Stock updates
+* Water Plants
+* Task Manager 
