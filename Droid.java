@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.lang.Thread;
+
+
+
 
 class Task 
 {
@@ -36,8 +40,25 @@ public class Droid
         this.tasks = new ArrayList<>();
     }
 
-    public static void main(String[] args) 
+    public static void main(String[] args) throws InterruptedException
     {
+        String banner = "__      __  ___   _       ___    ___    __  __   ___   \n" +
+                        "\\ \\    / / | __| | |     / __|  / _ \\  |  \\/  | | __|  \n" +
+                        " \\ \\/\\/ /  | _|  | |__  | (__  | (_) | | |\\/| | | _|   \n" +
+                        "  \\_/\\_/   |___| |____|  \\___|  \\___/  |_|  |_| |___|  \n" +
+                        "                                                     \n";
+
+        for (int i = 0; i < banner.length(); i++) 
+        {
+            System.out.print(banner.charAt(i));
+            Thread.sleep(2);
+        }
+
+
+
+
+
+
         Droid M = new Droid("Hola...! I am Droid");
         System.out.println(M.welcome);
 
